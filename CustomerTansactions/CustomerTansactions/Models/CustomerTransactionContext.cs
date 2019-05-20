@@ -3,7 +3,7 @@ using System.Data.Entity;
 
 namespace CustomerTansactions.Models
 {
-    public class CustomerTransactionContextInititalizer : DropCreateDatabaseAlways<CustomerTransactionContext>
+    public class CustomerTransactionContextInititalizer : CreateDatabaseIfNotExists<CustomerTransactionContext>
     {
         protected override void Seed(CustomerTransactionContext context)
         {

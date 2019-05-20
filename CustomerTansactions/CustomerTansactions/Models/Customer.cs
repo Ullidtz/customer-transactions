@@ -7,7 +7,7 @@ namespace CustomerTansactions.Models
     public class Customer
     {
         [Key, Required]
-        public int CustomerID { get; set; }
+        public long CustomerID { get; set; }
         [Index("EMail_Index", IsUnique = true), Required, StringLength(25)]
         public string EMail { get; set; }
         [StringLength(30)]
