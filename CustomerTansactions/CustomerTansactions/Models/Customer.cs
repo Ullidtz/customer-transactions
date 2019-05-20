@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CustomerTansactions.Models
 {
@@ -7,7 +8,7 @@ namespace CustomerTansactions.Models
     {
         [Key, Required]
         public int CustomerID { get; set; }
-        [Key, Required, StringLength(25)]
+        [Index("EMail_Index", IsUnique = true), Required, StringLength(25)]
         public string EMail { get; set; }
         [StringLength(30)]
         public string Name { get; set; }
