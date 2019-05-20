@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Data.Entity;
 
-namespace CustomerTansactions.Models
+namespace CustomerTransactions.Models
 {
     public class CustomerTransactionContextInititalizer : CreateDatabaseIfNotExists<CustomerTransactionContext>
     {

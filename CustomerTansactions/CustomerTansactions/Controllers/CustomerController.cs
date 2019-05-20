@@ -1,8 +1,8 @@
-﻿using CustomerTansactions.Models;
+﻿using CustomerTransactions.Models;
 using System.Linq;
 using System.Web.Http;
 
-namespace CustomerTansactions.Controllers
+namespace CustomerTransactions.Controllers
 {
     public class CustomerController : ApiController
     {
