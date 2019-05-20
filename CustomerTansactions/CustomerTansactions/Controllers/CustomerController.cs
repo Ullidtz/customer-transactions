@@ -46,7 +46,7 @@ namespace CustomerTansactions.Controllers
                             email = c.EMail,
                             name = c.Name,
                             mobile = c.Mobile,
-                            transactions = c.Transactions.Take(5).Select(t => new
+                            transactions = c.Transactions.OrderByDescending(t => t.Date).Take(5).Select(t => new
                             {
                                 id = t.ID,
                                 date = t.Date,

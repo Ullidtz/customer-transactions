@@ -85,7 +85,7 @@ namespace CustomerTansactions.Models
                 ID = 5,
                 Amount = 1234.56m,
                 Currency = "USD",
-                Date = DateTime.Now,
+                Date = new DateTime(1982,2,2),
                 Status = "Success",
                 Customer = four
             };
@@ -95,7 +95,7 @@ namespace CustomerTansactions.Models
                 ID = 6,
                 Amount = 1234.56m,
                 Currency = "USD",
-                Date = DateTime.Now,
+                Date = new DateTime(1992, 2, 2),
                 Status = "Success",
                 Customer = four
             };
@@ -105,7 +105,7 @@ namespace CustomerTansactions.Models
                 ID = 7,
                 Amount = 1234.56m,
                 Currency = "USD",
-                Date = DateTime.Now,
+                Date = new DateTime(1972, 2, 2),
                 Status = "Success",
                 Customer = four
             };
@@ -115,7 +115,7 @@ namespace CustomerTansactions.Models
                 ID = 8,
                 Amount = 1234.56m,
                 Currency = "USD",
-                Date = DateTime.Now,
+                Date = new DateTime(1985, 2, 2),
                 Status = "Success",
                 Customer = four
             };
@@ -148,7 +148,7 @@ namespace CustomerTansactions.Models
     {
         public CustomerTransactionContext() : base()
         {
-            Database.SetInitializer<CustomerTransactionContext>(new CustomerTransactionContextInititalizer());
+            Database.SetInitializer(new CustomerTransactionContextInititalizer());
         }
 
         public DbSet<Customer> Customers { get; set; }
